@@ -1,0 +1,124 @@
+/* 🌟 Overall Orders Section */
+.my-orders {
+  margin: 60px auto;
+  max-width: 1000px;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.my-orders h2 {
+  font-size: 26px;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* 🧾 Orders Container */
+.my-orders .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* 🧩 Individual Order Card */
+.my-orders-order {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 2fr 1fr;
+  align-items: center;
+  gap: 25px;
+  font-size: 15px;
+  padding: 16px 24px;
+  color: #444;
+  border: 1px solid rgba(255, 99, 71, 0.4);
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(255, 99, 71, 0.08);
+  transition: all 0.3s ease;
+}
+
+.my-orders-order:hover {
+  background-color: #fff7f5;
+  box-shadow: 0 6px 18px rgba(255, 99, 71, 0.2);
+  transform: translateY(-3px);
+}
+
+.my-orders-order img {
+  width: 55px;
+  border-radius: 8px;
+}
+
+/* 📦 Order Details */
+.my-orders-order p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.my-orders-order p span {
+  color: tomato;
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+.my-orders-order p b {
+  font-weight: 600;
+  color: #333;
+}
+
+/* 🧭 Action Buttons */
+.order-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.order-actions button {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: #ffe8e5;
+  cursor: pointer;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.order-actions button:hover {
+  background-color: tomato;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ❌ Cancel Icon */
+.cancel-icon {
+  color: tomato;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.cancel-icon:hover {
+  color: red;
+  transform: scale(1.15);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 900px) {
+  .my-orders-order {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .my-orders-order img {
+    width: 45px;
+  }
+
+  .order-actions button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
